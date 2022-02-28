@@ -35,7 +35,7 @@ function accountController($scope, $http) {
   }
 
   $scope.onUpdate = function () {
-    $scope.sv.id = null; //
+   
     $http.put(apiUpdate, $scope.sv)
       .then(function (response) {
         console.log(response.data);

@@ -135,32 +135,12 @@
   ],
   "sv": [
     {
-      "gender": "0",
-      "isAdmin": 0,
-      "pass1": "totqxnn001",
-      "email": "thaocnph13274@fpt.edu.vn",
-      "pass": "totqxnn001",
-      "fullname": "thao 10 điểm",
-      "address": "aaaaa",
-      "id": 9
-    },
-    {
-      "gender": "1",
-      "isAdmin": "1",
-      "email": "thaocnph1327423@fpt.edu.vn",
-      "pass1": "totqxnn001",
-      "pass": "totqxnn001",
-      "fullname": "thao dep trai",
-      "address": "hà nội",
-      "id": 14
-    },
-    {
       "gender": "1",
       "isAdmin": "1",
       "email": "thaocnph132743332@fpt.edu.vn",
       "pass1": "totqxnn001",
       "pass": "totqxnn001",
-      "fullname": "aaaaaaaaaaaa",
+      "fullname": "12224",
       "address": "huhu",
       "id": 16
     },
@@ -171,7 +151,7 @@
       "pass1": "totqxnn002",
       "pass": "totqxnn002",
       "fullname": "Phạm Thị Mai Hương",
-      "address": "sài gòn",
+      "address": "aaaa",
       "id": 17
     },
     {
@@ -203,6 +183,16 @@
       "fullname": "thaodeptrai",
       "address": "thai binh xịn",
       "id": 20
+    },
+    {
+      "gender": "1",
+      "isAdmin": "1",
+      "email": "meomeomeo@fpt.edu.vn",
+      "pass1": "totqxnn001",
+      "pass": "totqxnn001",
+      "fullname": "aaaaa",
+      "address": "thái bình xịn",
+      "id": 21
     }
   ]
 }
