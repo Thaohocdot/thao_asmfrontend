@@ -1,12 +1,11 @@
 <div>
-    <form class="mt-3"  name="formSV">
+    <form class="mt-3" name="formSV">
         <div class="alert {{ isSuccess ? 'alert-success' : 'alert-danger' }}" ng-if="message.length != 0">
             {{ message }}
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label fw-bold">Email</label>
-            <input type="email" class="form-control" name="txtEmail" id="exampleInputEmail1" ng-model="sv.email"
-                aria-describedby="emailHelp" required>
+            <input type="email" class="form-control" name="txtEmail" id="exampleInputEmail1" ng-model="sv.email" aria-describedby="emailHelp" required>
             <!-- <div ng-hide="formSV.txtEmail.$valid || formSV.txtEmail.$untouched">
             <small class="form-text text-danger" ng-show="formSV.txtEmail.$error.required">Vui lòng nhập email</small>
             <small class="form-text text-danger" ng-show="formSV.txtEmail.$error.email">Không đúng định dạng</small>
@@ -14,8 +13,7 @@
         </div>
         <div class="mb-3">
             <label for="pass1" class="form-label fw-bold">Mật khẩu</label>
-            <input type="password" minlength="6" maxlength="32" name="txtPass1" class="form-control" id="pass1"
-                ng-model="sv.pass1" required>
+            <input type="password" minlength="6" maxlength="32" name="txtPass1" class="form-control" id="pass1" ng-model="sv.pass1" required>
             <div ng-hide="formSV.txtPass1.$valid || formSV.txtPass1.$untouched">
                 <small class="form-text text-danger" ng-show="formSV.txtPass1.$error.required">Vui lòng nhập mật
                     khẩu</small>
@@ -29,8 +27,7 @@
         </div>
         <div class="mb-3">
             <label for="pass2" class="form-label fw-bold">Xác nhận mật khẩu</label>
-            <input type="password" minlength="6" maxlength="32" name="txtPass2" class="form-control" id="pass2"
-                ng-model="sv.pass" required>
+            <input type="password" minlength="6" maxlength="32" name="txtPass2" class="form-control" id="pass2" ng-model="sv.pass" required>
             <div ng-hide="formSV.txtPass2.$valid || formSV.txtPass2.$untouched">
                 <small class="form-text text-danger" ng-show="formSV.txtPass2.$error.required">Vui lòng nhập mật
                     khẩu</small>
@@ -52,34 +49,30 @@
         </div>
         <div class="mb-2">
             <label for="exampleInputPassword1" class="form-label fw-bold pe-4">Giới tính</label>
-            <input id="genNam" class="form-check-input" type="radio" ng-model="sv.gender" value="1"
-                ng-checked="sv.gender == 1" name="gender">
+            <input id="genNam" class="form-check-input" type="radio" ng-model="sv.gender" value="1" ng-checked="sv.gender == 1" name="gender">
             <label class="form-check-label pe-3" for="genNam">Nam</label>
             <input id="genNu" class="form-check-input" type="radio" ng-model="sv.gender" value="0" name="gender">
             <label class="form-check-label" for="genNu">Nữ</label>
         </div>
         <div class="mb-2">
             <label for="exampleInputPassword1" class="form-label fw-bold pe-4">Vai trò</label>
-            <input id="admin" class="form-check-input" type="radio" ng-model="sv.isAdmin" value="1" ng-checked="sv.isAdmin == 1"
-                ng-checked="sv.isAdmin == 1" name="isAdmin">
+            <input id="admin" class="form-check-input" type="radio" ng-model="sv.isAdmin" value="1" ng-checked="sv.isAdmin == 1" ng-checked="sv.isAdmin == 1" name="isAdmin">
             <label class="form-check-label pe-3" for="admin">Admin</label>
             <input id="user" class="form-check-input" type="radio" ng-model="sv.isAdmin" value="0" name="isAdmin">
             <label class="form-check-label" for="user">User</label>
         </div>
         <div class="mb-3">
             <label for="address" class="form-label fw-bold">Địa chỉ</label>
-            <input type="text" class="form-control" id="address" name="txtAddress" ng-model="sv.address"
-                aria-describedby="emailHelp" required>
+            <input type="text" class="form-control" id="address" name="txtAddress" ng-model="sv.address" aria-describedby="emailHelp" required>
             <div ng-hide="formSV.txtAddress.$valid || formSV.txtAddress.$untouched">
                 <small class="form-text text-danger" ng-show="formSV.txtAddress.$error.required">Vui lòng nhập địa
                     chỉ</small>
             </div>
         </div>
         <div class="mt-3">
-            <button type="button" ng-click="onInsert($event)" class="btn btn-primary">Thêm</button>
+            <button type="button" ng-click="onInsert()" class="btn btn-primary">Thêm</button>
             <button type="button" ng-click="onUpdate()" ng-hide="index == -1" class="btn btn-primary">Sửa</button>
-            <button type="button" class="btn btn-primary" ng-hide="index == -1" data-bs-toggle="modal"
-                data-bs-target="#modalXoaAcc">Xóa</button>
+            <button type="button" class="btn btn-primary" ng-hide="index == -1" data-bs-toggle="modal" data-bs-target="#modalXoaAcc">Xóa</button>
             <div id="modalXoaAcc" class="modal" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -91,11 +84,9 @@
                             <h5>Bạn có muốn xóa tài khoản này?</h5>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" ng-click="onDelete()"
-                                data-bs-dismiss="modal">Xác
+                            <button type="button" class="btn btn-danger" ng-click="onDelete()" data-bs-dismiss="modal">Xác
                                 nhận</button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                                aria-label="Close">Hủy</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Hủy</button>
                         </div>
                     </div>
                 </div>
@@ -125,5 +116,5 @@
             </tr>
         </tbody>
     </table>
-  
+
 </div>

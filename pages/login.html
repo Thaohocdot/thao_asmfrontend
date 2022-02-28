@@ -1,53 +1,50 @@
-
 <div>
     <div class="row mt-5 mb-5">
-      <div class="col-sm-4 offset-4  rounded-3 bg-white pb-5 px-4">
-        <div class="row">
-          <div class="text-center mt-2 mb-2">
-            <img src="img/logo/loginLogo.png" class="w-25 mb-2" alt="">
-            <h5 class="text-uppercase text-secondary">Đăng nhập</h5>
-          </div>
-          <form name="formLogin">
-            <div class="row mb-4">
-              <div>
-                <label for="user" class="form-label">Email</label>
-                <input type="text" id="user" name="txtEmail" ng-model="user.email" class="form-control"
-                  aria-label="Recipient's username" aria-describedby="basic-addon2" required>
-              </div>
-              <div ng-hide="formLogin.txtEmail.$valid || formLogin.txtEmail.$untouched">
-                <small class="form-text text-danger" ng-show="formLogin.txtEmail.$error.required">Vui lòng nhập
+        <div class="col-sm-4 offset-4  rounded-3 bg-white pb-5 px-4">
+            <div class="row">
+                <div class="text-center mt-2 mb-2">
+                    <img src="img/logo/loginLogo.png" class="w-25 mb-2" alt="">
+                    <h5 class="text-uppercase text-secondary">Đăng nhập</h5>
+                </div>
+                <form name="formLogin">
+                    <div class="row mb-4">
+                        <div>
+                            <label for="user" class="form-label">Email</label>
+                            <input type="text" id="user" name="txtEmail" ng-model="user.email" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" required value="thaocnph132743332@fpt.edu.vn">
+                        </div>
+                        <div ng-hide="formLogin.txtEmail.$valid || formLogin.txtEmail.$untouched">
+                            <small class="form-text text-danger" ng-show="formLogin.txtEmail.$error.required">Vui lòng nhập
                   email!</small>
-                <small class="form-text text-danger" ng-show="formLogin.txtEmail.$error.email">Sai định dạng
+                            <small class="form-text text-danger" ng-show="formLogin.txtEmail.$error.email">Sai định dạng
                   email!</small>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div>
-                <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
-                <input type="password" minlength="6" maxlength="32" class="form-control" name="txtPass"
-                  ng-model="user.pass" id="exampleInputPassword1" required>
-              </div>
-              <div ng-hide="formLogin.txtPass.$valid || formLogin.txtPass.$untouched">
-                <small class="form-text text-danger" ng-show="formLogin.txtPass.$error.required">Vui lòng nhập mật
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div>
+                            <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
+                            <input type="password" minlength="6" maxlength="32" class="form-control" name="txtPass" ng-model="user.pass" id="exampleInputPassword1" required value="totqxnn001">
+                        </div>
+                        <div ng-hide="formLogin.txtPass.$valid || formLogin.txtPass.$untouched">
+                            <small class="form-text text-danger" ng-show="formLogin.txtPass.$error.required">Vui lòng nhập mật
                   khẩu!</small>
-                <small class="form-text text-danger" ng-show="formLogin.txtPass.$error.minlength">Mật khẩu có độ
+                            <small class="form-text text-danger" ng-show="formLogin.txtPass.$error.minlength">Mật khẩu có độ
                   dài 6 -32 ký tự!</small>
-              </div>
-            </div>
-            <div class="row mb-5">
-              <div class="col-6">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
-              </div>
-              <div class="col-4 offset-2">
-                <a class="text-end text-decoration-none" href="forgot.html">Quên mật khẩu</a>
-              </div>
-            </div>
-            <button ng-click="loginForm()" class="btn btn-primary">Đăng nhập</button>
-            <a class="text-decoration-none text-white btn btn-secondary d-inline-block" href="register.html">Đăng
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-6">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                        </div>
+                        <div class="col-4 offset-2">
+                            <a class="text-end text-decoration-none" href="forgot.html">Quên mật khẩu</a>
+                        </div>
+                    </div>
+                    <button ng-click="loginForm()" class="btn btn-primary">Đăng nhập</button>
+                    <a class="text-decoration-none text-white btn btn-secondary d-inline-block" href="register.html">Đăng
               Ký</a>
-          </form>
+                </form>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
