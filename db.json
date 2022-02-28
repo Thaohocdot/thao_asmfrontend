@@ -1,0 +1,208 @@
+{
+  "subject": [
+    {
+      "id": 1,
+      "text": "Xây dựng trang web",
+      "img": "HTCS.jpg"
+    },
+    {
+      "id": 2,
+      "text": "Cơ sở dữ liệu",
+      "img": "DBBS.png"
+    },
+    {
+      "id": 3,
+      "text": "Lập trình Javascript",
+      "img": "JSPR.png"
+    },
+    {
+      "id": 4,
+      "text": "Trò chơi con mực",
+      "img": "GAME.png"
+    },
+    {
+      "id": 5,
+      "text": "Lập trình ASP.NET",
+      "img": "ASNE.png"
+    },
+    {
+      "id": 6,
+      "text": "Lập trình PHP",
+      "img": "PHPP.png"
+    },
+    {
+      "id": 7,
+      "text": "Java OPP",
+      "img": "JAAV.png"
+    },
+    {
+      "id": 8,
+      "text": "Lập trình mobile",
+      "img": "ADBS.jpg"
+    }
+  ],
+  "quizs": [
+    {
+      "id": 5,
+      "text": "Câu lệnh SQL nào được dùng để xóa dữ liệu trong database?",
+      "answer": "Delete",
+      "answer1": "Remove",
+      "answer2": "Delete",
+      "answer3": "Del",
+      "answer4": "Backspace",
+      "check": "2"
+    },
+    {
+      "id": 7,
+      "text": "Câu lệnh SQL nào được dùng để truy vấn dữ liệu trong database?",
+      "answer": "Select",
+      "answer1": "Update",
+      "answer2": "Insert",
+      "answer3": "Into",
+      "answer4": "Select",
+      "check": "4"
+    },
+    {
+      "id": 8,
+      "text": "Cú pháp SQL nào được dùng để trả về những giá trị khác nhau?",
+      "answer": "Select Distinct",
+      "answer1": "Select Identity",
+      "answer2": "Select Differnt",
+      "answer3": "Select Unique",
+      "answer4": "Select Distinct",
+      "check": "4"
+    },
+    {
+      "id": 1,
+      "text": "Từ khóa SQL nào được sử dụng để sắp xếp danh sách kết quả?",
+      "answer": "ORDER BY",
+      "answer1": "SORT BY",
+      "answer2": "ORDER BY",
+      "answer3": "ORDER",
+      "answer4": "SORT",
+      "check": "2"
+    },
+    {
+      "id": 2,
+      "text": "Left outer join là 1 dạng của outer join, 1 dạng khác là:",
+      "answer": "RIGHT OUTER",
+      "answer1": "RIGHT OUTER",
+      "answer2": "FULL OUTER",
+      "answer3": "RIGHT",
+      "answer4": "Tất cả đáp án trên",
+      "check": "1"
+    },
+    {
+      "id": 3,
+      "text": "Trong SQL, làm thế nào để chọn tất cả các cột từ bảng Persons?",
+      "answer": "SELECT * FROM Persons",
+      "answer1": "SELECT * FROM Persons",
+      "answer2": "SELECT *.Persons",
+      "answer3": "SELECT Persons",
+      "answer4": "SELECT [all] FROM Persons",
+      "check": "1"
+    },
+    {
+      "id": 9,
+      "text": "Trong SQL, làm thế nào để trả về số lượng các bản ghi trong bảng Persons:",
+      "answer": "SELECT COUNT (*) FROM Persons",
+      "answer1": "SELECT COUNT (*) FROM Persons",
+      "answer2": "SELECT COLUMNS (*) FROM Persons",
+      "answer3": "SELECT COUNT () FROM Persons",
+      "answer4": "SELECT COLUMN () FROM Persons",
+      "check": "1"
+    },
+    {
+      "id": 10,
+      "text": "Kiểu khóa nào sau đây sẽ ngăn chặn bất kỳ người dùng nào truy cập vào bảng dữ liệu:",
+      "answer": "SHARED",
+      "answer1": "EXPLICIT",
+      "answer2": "IMPLICIT",
+      "answer3": "EXCLUSIVE",
+      "answer4": "SHARED",
+      "check": "4"
+    },
+    {
+      "id": 11,
+      "text": "Câu lệnh SQL nào được dùng để thêm dữ liệu trong database?",
+      "answer": "Open",
+      "answer1": "Get",
+      "answer2": "Open",
+      "answer3": "Select",
+      "answer4": "New",
+      "check": "3"
+    }
+  ],
+  "sv": [
+    {
+      "gender": "0",
+      "isAdmin": 0,
+      "pass1": "totqxnn001",
+      "email": "thaocnph13274@fpt.edu.vn",
+      "pass": "totqxnn001",
+      "fullname": "thao 10 điểm",
+      "address": "aaaaa",
+      "id": 9
+    },
+    {
+      "gender": "1",
+      "isAdmin": "1",
+      "email": "thaocnph1327423@fpt.edu.vn",
+      "pass1": "totqxnn001",
+      "pass": "totqxnn001",
+      "fullname": "thao dep trai",
+      "address": "hà nội",
+      "id": 14
+    },
+    {
+      "gender": "1",
+      "isAdmin": "1",
+      "email": "thaocnph132743332@fpt.edu.vn",
+      "pass1": "totqxnn001",
+      "pass": "totqxnn001",
+      "fullname": "aaaaaaaaaaaa",
+      "address": "huhu",
+      "id": 16
+    },
+    {
+      "gender": "1",
+      "isAdmin": "1",
+      "email": "thaocnphaaa13274@fpt.edu.vn",
+      "pass1": "totqxnn002",
+      "pass": "totqxnn002",
+      "fullname": "Phạm Thị Mai Hương",
+      "address": "sài gòn",
+      "id": 17
+    },
+    {
+      "gender": "1",
+      "isAdmin": "1",
+      "email": "thaocnphaaa13274@fpt.edu.vn",
+      "pass1": "totqxnn002",
+      "pass": "totqxnn002",
+      "fullname": "Phạm Thị Mai Hương",
+      "address": "sài gòn",
+      "id": 18
+    },
+    {
+      "gender": "1",
+      "isAdmin": "1",
+      "email": "thaocnph132a741@fpt.edu.vn",
+      "pass1": "totqxnn001",
+      "pass": "totqxnn001",
+      "fullname": "ahihi",
+      "address": "thái bình xịn",
+      "id": 19
+    },
+    {
+      "gender": 1,
+      "isAdmin": 0,
+      "email": "thaocnph132741@fpt.edu.vn",
+      "pass1": "totqxnn001",
+      "pass": "totqxnn001",
+      "fullname": "thaodeptrai",
+      "address": "thai binh xịn",
+      "id": 20
+    }
+  ]
+}

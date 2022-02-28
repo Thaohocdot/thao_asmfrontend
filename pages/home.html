@@ -1,0 +1,46 @@
+
+<div class="row">
+    <article class="col-sm-9 pt-1 pb-5 mb-5 ps-0 ">
+        <div class="row">
+            <div ng-repeat="sub in subjects | limitTo:8" class="col-sm-3 mt-3">
+                <div class="card">
+                    <div class="card-body rounded mx-auto d-block">
+                        <img src="img/logo//{{sub.img}}" alt="">
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-title m-0 text-center">{{sub.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </article>
+    <aside class="col-sm-3 pb-5 mb-5">
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><a class="text-decoration-none text-black d-block" href="#"
+                        data-bs-toggle="collapse" data-bs-target="#listMon"><i class="bi bi-list-ul"></i> Danh mục môn
+                        học
+                        <span ng-bind="countSub" class="badge bg-danger rounded-pill"></span></a></h5>
+            </div>
+            <div class="card-body p-0 collapse show" id="listMon">
+                <div class="list-group">
+                    <a href="" ng-repeat="sub in subjects"
+                        class="list-group-item list-group-item-action">{{sub.text}}</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>

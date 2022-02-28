@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <!-- link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://kit.fontawesome.com/29b41ee1c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body ng-app="myApp">
+    <div class="container" ng-controller="myController">
+        <header class="row">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="2500" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/BannerWeb-5.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Banner-Web-5.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Quy-chế1900x900.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                   
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </header>
+        <nav class="row navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid px-2">
+                <a class="navbar-brand " href="#pages/home">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    FPT Polytechnic
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class=" navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#pages/quiz">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#pages/introduce">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pages/contact">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pages/qa">Hỏi đáp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" ng-show="isAdmin" href="#pages/account">Quản lý tài khoản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" ng-show="isAdmin" href="#pages/question">Quản lý câu hỏi</a>
+                        </li>
+                    </ul>
+                    <span class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white ps-0" ng-model="taikhoan"
+                            id="navbarDropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            {{taikhoan}}
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li ng-hide="isLogin"><a class="dropdown-item" href="#login">Đăng nhập</a></li>
+                            <li ng-hide="isLogin"><a class="dropdown-item" href="#register">Đăng ký</a></li>
+                            <li ng-hide="isLogin"><a class="dropdown-item" href="forgot.html">Quên mật khẩu</a></li>
+                            <li ng-hide="!isLogin"><a class="dropdown-item" ng-click="logout()" href="">Đăng xuất</a>
+                            </li>
+                            <li ng-hide="!isLogin">
+                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#doimatkhau">Đổi mật
+                                    khẩu</a>
+                            </li>
+                            <li ng-hide="!isLogin"><a class="dropdown-item" href="#infor">Cập nhật
+                                    tài khoản</a></li>
+                        </ul>
+                        <div class="modal fade" id="doimatkhau" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Đổi mật khẩu</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form name="formChangePass">
+                                            <div class="mb-3">
+                                                <input type="password" name="txtPass1" ng-model="u.pass1" class="form-control"
+                                                    placeholder="Mật khẩu cũ" required>
+                                                <div ng-hide="formChangePass.txtPass1.$valid || formChangePass.txtPass1.$untouched">
+                                                    <small class="form-text text-danger"
+                                                        ng-show="formChangePass.txtPass1.$error.required">Vui lòng nhập mật khẩu cũ!</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <input type="password" name="txtPass2" ng-model="u.pass2" class="form-control"
+                                                    placeholder="Mật khẩu mới" required>
+                                                <div ng-hide="formChangePass.txtPass2.$valid || formChangePass.txtPass2.$untouched">
+                                                    <small class="form-text text-danger"
+                                                        ng-show="formChangePass.txtPass2.$error.required">Vui lòng nhập mật khẩu mới!</small>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="password" name="txtPass3" ng-model="u.pass3" class="form-control"
+                                                    placeholder="Xác nhận mật khẩu" required>
+                                                <div ng-hide="formChangePass.txtPass3.$valid || formChangePass.txtPass3.$untouched">
+                                                    <small class="form-text text-danger"
+                                                        ng-show="formChangePass.txtPass3.$error.required">Vui lòng nhập mật khẩu xác nhận!</small>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Đóng</button>
+                                        <button type="submit" ng-click="changePass()" class="btn btn-primary">Xác
+                                            nhận</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <div ng-view></div>
+
+        <footer class="row bg-primary">
+            <div class="col-sm-3">
+                <img src="img/icon2a.png" class="w-75 pt-2" alt="">
+            </div>
+            <div class="col-sm-3 pt-3">
+                <h5 class="text-uppercase text-white">Thông tin liên hệ</h5>
+                <p class="text-white">
+                    <i class="bi bi-envelope-fill"></i> Email: caodang@fpt.edu.vn
+                    <br>
+                    <i class="bi bi-telephone-fill"></i> <span class="text-decoration-underline">(024) 7300 1955</span>
+                </p>
+            </div>
+            <div class="col-sm-6 pt-3">
+                <h5 class="text-uppercase text-white">Địa chỉ cơ sở Hà Nội</h5>
+                <p class="text-white">
+                    <i class="bi bi-geo-alt-fill"></i> Tòa nhà FPT Polytechnic, Phố Trịnh Văn Bô, Nam Từ Liêm, Hà Nội
+                    <br>
+                    <i class="bi bi-telephone-fill"></i> <span class="text-decoration-underline">(024) 8582 0808</span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- script -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular-route.js"></script>
+
+    <script src="controller/myController.js"></script>
+    <script src="controller/homeController.js"></script>
+    <script src="controller/quizController.js"></script>
+    <script src="controller/loginController.js"></script>
+    <script src="controller/registerController.js"></script>
+    <script src="controller/accountController.js"></script>
+    <script src="controller/quesController.js"></script>
+
+    <script src="js/app.js"></script>
+
+
+
+</body>
+
+</html>
